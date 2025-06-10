@@ -1,0 +1,1 @@
+option('plugin_name', type: 'string', value: 'template-plugin', description: 'Name of the plugin to build')
