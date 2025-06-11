@@ -11,7 +11,9 @@ sudo ninja -C build install
 
 ## FreeBSD Requirements
 
-Install dependencies via `pkg` command
+OBJECTIVE C++ VERSION REQUIRES GNUSTEP
+
+Install other dependencies via `pkg` command
 ```sh
 pkg install wayfire wlroots meson ninja pkgconf cairo glm libxkbcommon libdrm libinput libudev-devd seatd
 
@@ -29,3 +31,5 @@ Install plugin and add this to your wayfire config file
 [core]
 plugins = template-plugin
 ```
+
+
