@@ -6,14 +6,17 @@ class wf_template_plugin : public wf::plugin_interface_t
 public:
     void init() override
     {
-        grab_interface->name = "template-plugin";
-        LOGI("Template plugin loaded.");
+        // Plugin initialized
     }
 
     void fini() override
     {
-        LOGI("Template plugin unloaded.");
+        // Plugin cleaned up
     }
 };
 
-DECLARE_WAYFIRE_PLUGIN(wf_template_plugin);
+extern "C" wf::plugin_interface_t* newInstance()
+{
+    return new wf_template_plugin();
+}
+

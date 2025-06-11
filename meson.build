@@ -9,7 +9,6 @@ shared_module(
   'template-plugin',
   srcs,
   dependencies: [wayfire_dep],
-  name_suffix: '',
   install: true,
   install_dir: join_paths(get_option('libdir'), 'wayfire')
 )
